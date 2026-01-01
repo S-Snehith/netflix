@@ -10,20 +10,20 @@ body{
 }
 .main{
     background-image: url(assets/images/bg.jpg);
-    height: 70vh;
+    min-height: 100vh;  
     position: relative;
-    background-position : center center;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: max(1000px,100vw);
+    background-size: cover; 
 }
+
 .main .box{
-    height: 70vh;
+    min-height: 100%;
     width: 100%;
     opacity: 0.74;
     position: absolute;
     top: 0;
     background-color: black;
-
 }
 nav{
     max-width: 80vw;
@@ -31,10 +31,10 @@ nav{
     margin: auto;
     display: flex;
     align-items: center;
-    height: 62px;
+    height: 150px;
 }
 nav img{
-    width: 144px;
+    width: 134px;
     position: relative;
     z-index: 10;
 }
@@ -45,7 +45,9 @@ nav button{
 
 .hero{
     font-family: 'Martel Sans', sans-serif;
-    height: calc(100% - 62px);
+
+    min-height: 80vh;
+
     display: flex;
     align-items: center;
     justify-content: center;
